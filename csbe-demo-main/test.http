@@ -1,0 +1,28 @@
+GET localhost:8080/persons
+
+###
+
+GET localhost:8080/persons/1
+
+###
+
+POST localhost:8080/auth/registration
+Content-Type: application/json
+
+{
+  "lastName": "Jane",
+  "firstName": "Doe",
+  "userName": "jane_doe",
+  "password": "pw12345789"
+}
+
+
+###
+
+POST localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "userName": "jane_doe",
+  "password": "pw12345789"
+}
