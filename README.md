@@ -32,15 +32,20 @@ Die Datenbank müssen Sie selbst mit den nötigen Tabellen und Eigenschaften ein
 Alle Endpoints (ausser dies wird anderweitig entkräftet) der API müssen mittels JSON Web Token geschützt werden. Dafür muss es allerdings einen einzigen Endpoint zur Authentifizierung geben, der ohne Token erreichbar ist. Dieser Endpoint nimmt einen Benutzernamen und ein Passwort entgegen und gibt ein valides JWT zurück, das dann zur Authentifizierung von allen anderen Endpoints verwendet wird.
 
 ## Datenmodell
-(Beschreibung des Datenmodells)
+Die Datenstruktur besteht aus zwei Tabellen, die durch einen Fremdschlüssel miteinander verbunden sind. Es handelt sich um die Tabellen product und category. Durch den Fremdschlüssel category_id wird ein Produkt einer Kategorie zugewiesen. Ein Produkt kann auch keine Kategorie haben (sprich: das Produkt ist nicht gelistet).
 
 - Produkt: (Beschreibung)
 - Kategorie: (Beschreibung)
 
+Die Tabelle: „Users“ gilt es selbst zu definieren. Achten Sie dabei auf die hier implementierten Namenskonventionen. 
+
 ## Dokumentation
+Alle Endpoints müssen sauber gemäss OpenAPI dokumentiert werden, sodass diese durch eine Swagger-Applikation eingesehen werden können.
+Es muss eine Datei vorhanden sein, die alle Endpoints zu einer OpenAPI-Datei im YAML/JSON-Format zusammenfasst und ausgibt
 
 ## Technologien
-Beschreiben Sie die verwendeten Technologien wie Java Spring Boot, MariaDB, usw.
+Es wird mit einem Java Spring Boot Server (Spring Boot 3.X / Spring Framework 6.X) und einer MariaDB gearbeitet. Den Code-Editor oder die IDE wählen Sie selbst.
+Zum Einsehen der Schnittstellendokumentation wird die Web-App swagger-ui verwendet.
 
 ## Anforderungen
 
