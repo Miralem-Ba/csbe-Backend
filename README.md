@@ -57,26 +57,26 @@ Zum Einsehen der Schnittstellendokumentation wird die Web-App swagger-ui verwend
 ## Anforderungen
 Funktonal
 
-•	Ein nicht authentifizierter Benutzer kann sich authentifizieren
-•	Ein nicht authentifizierter Benutzer kann ein Konto erstellen
-•	Ein authentifizierter Benutzer mit Administrationsrechte kann einen Benutzer zum Administrator befördern
-•	Mittels einem Database Seeder werden initiale Daten in die Datenbank geladen
-•	Ein authentifizierter Benutzer mit Administrationsrechte kann Produkte erstellen
-•	Ein authentifizierter und nicht authentifizierter Benutzer kann Produkte einsehen
-•	Ein authentifizierter Benutzer mit Administrationsrechte kann Produkte bearbeiten
-•	Ein authentifizierter Benutzer mit Administrationsrechte kann Produkte löschen
-•	Ein authentifizierter Benutzer und nicht authentifizierter Benutzer kann alle Produkte auflisten
-•	Ein authentifizierter Benutzer mit Administrationsrechte kann Produktkategorien erstellen
-•	Ein authentifizierter und nicht authentifizierter Benutzer kann Produktkategorien einsehen
-•	Ein authentifizierter Benutzer mit Administrationsrechte kann Produktkategorien bearbeiten
-•	Ein authentifizierter Benutzer mit Administrationsrechte kann Produktkategorien löschen
-•	Ein authentifizierter Benutzer und nicht authentifizierter Benutzer kann alle Produktkategorien auflisten
-•	Ein authentifizierter Benutzer und nicht authentifizierter Benutzer kann alle Produkte einer Produktekategorie auflisten
+- Ein nicht authentifizierter Benutzer kann sich authentifizieren
+- Ein nicht authentifizierter Benutzer kann ein Konto erstellen
+- Ein authentifizierter Benutzer mit Administrationsrechte kann einen Benutzer zum Administrator befördern
+- Mittels einem Database Seeder werden initiale Daten in die Datenbank geladen
+- Ein authentifizierter Benutzer mit Administrationsrechte kann Produkte erstellen
+- Ein authentifizierter und nicht authentifizierter Benutzer kann Produkte einsehen
+- Ein authentifizierter Benutzer mit Administrationsrechte kann Produkte bearbeiten
+- Ein authentifizierter Benutzer mit Administrationsrechte kann Produkte löschen
+- Ein authentifizierter Benutzer und nicht authentifizierter Benutzer kann alle Produkte auflisten
+- Ein authentifizierter Benutzer mit Administrationsrechte kann Produktkategorien erstellen
+- Ein authentifizierter und nicht authentifizierter Benutzer kann Produktkategorien einsehen
+- Ein authentifizierter Benutzer mit Administrationsrechte kann Produktkategorien bearbeiten
+- Ein authentifizierter Benutzer mit Administrationsrechte kann Produktkategorien löschen
+- Ein authentifizierter Benutzer und nicht authentifizierter Benutzer kann alle Produktkategorien auflisten
+- Ein authentifizierter Benutzer und nicht authentifizierter Benutzer kann alle Produkte einer Produktekategorie auflisten
 
 Nichtfunktional
 
-•	Die Applikation erfüllt die REST-Richtlinien (Insbesondere sind die Endpoints einheitlich und sinnvoll zu benennen)
-•	Die Datenbankanbindung erfolgt mittels Spring JDBC
-•	Die Authentifizierung für die geschützten Endpoints wird mittels JWT umgesetzt
-•	Es muss stets ein Benutzer mit Administratorenrechte im System geben
-•	Passwörter werden mit einem starken Verschlüsslungsalgorithmus geschützt
+- Die Applikation erfüllt die REST-Richtlinien (Insbesondere sind die Endpoints einheitlich und sinnvoll zu benennen)
+- Die Datenbankanbindung erfolgt mittels Spring JDBC
+- Die Authentifizierung für die geschützten Endpoints wird mittels JWT umgesetzt
+- Es muss stets ein Benutzer mit Administratorenrechte im System geben
+- Passwörter werden mit einem starken Verschlüsslungsalgorithmus geschützt
