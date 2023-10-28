@@ -25,7 +25,7 @@ Namensschema für Daten
 Arbeitsjournal
 Quellen
 
-# Projektauftrag
+## Projektauftrag
 (Hier beschreiben Sie den Projektauftrag)
 
 ## Datenmodell
