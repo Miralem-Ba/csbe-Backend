@@ -80,3 +80,12 @@ Nichtfunktional
 - Die Authentifizierung für die geschützten Endpoints wird mittels JWT umgesetzt
 - Es muss stets ein Benutzer mit Administratorenrechte im System geben
 - Passwörter werden mit einem starken Verschlüsslungsalgorithmus geschützt
+
+# Benutzer
+
+# Datenbank-Seed
+
+# Sicherheit
+
+# Authentifizierung
+
