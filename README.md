@@ -1,4 +1,30 @@
 BACKEND FÜR APPLIKATIONEN REALISIEREN
+
+# Inhalt
+Projektauftrag
+Datenmodell
+Dokumentation
+Technologien
+Anforderungen
+Funktional
+Nichtfunktional
+Dokumentation
+Benutzer
+Datenbank Seed
+Sicherheit
+Authentifizierung
+Dateistruktur
+Tabellenstruktur
+Code-Kommentare
+Einhaltung der Code-Style-Richtlinien
+OpenAPI-Dokumentation
+HTTP Response Codes
+API-Struktur
+Endpoints
+Namensschema für Daten
+Arbeitsjournal
+Quellen
+
 # Projektauftrag
 (Hier beschreiben Sie den Projektauftrag)
 
