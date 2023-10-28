@@ -40,16 +40,43 @@ Die Datenstruktur besteht aus zwei Tabellen, die durch einen Fremdschlüssel mit
 Die Tabelle: „Users“ gilt es selbst zu definieren. Achten Sie dabei auf die hier implementierten Namenskonventionen. 
 
 ## Dokumentation
-Alle Endpoints müssen sauber gemäss OpenAPI dokumentiert werden, sodass diese durch eine Swagger-Applikation eingesehen werden können.
+- Alle Endpoints müssen sauber gemäss OpenAPI dokumentiert werden, sodass diese durch eine Swagger-Applikation eingesehen werden können.
 Es muss eine Datei vorhanden sein, die alle Endpoints zu einer OpenAPI-Datei im YAML/JSON-Format zusammenfasst und ausgibt
+
+- Die allgemeinen formalen Anforderungen (Schriftgrösse, Formalität, Gliederung, etc...) müssen beachtet werden
+Es muss ein Arbeitsjournal mit der Auflistung der Tätigkeiten und der Arbeitszeit sowie mit einer Reflexion für jeden Arbeitstag geführt werden
+Alle Endpoints der API müssen in der Dokumentation detailliert aufgelistet werden
+Alle Endpoints der API müssen zudem mit einer OpenAPI-Dokumentation vollständig beschrieben sein
+Es muss ein einheitliches Namensschema für die API-Parameter sowie für Datenbanktabellen und -spalten schriftlich definiert werden
+
 
 ## Technologien
 Es wird mit einem Java Spring Boot Server (Spring Boot 3.X / Spring Framework 6.X) und einer MariaDB gearbeitet. Den Code-Editor oder die IDE wählen Sie selbst.
 Zum Einsehen der Schnittstellendokumentation wird die Web-App swagger-ui verwendet.
 
 ## Anforderungen
+Funktonal
 
-### Funktonal
+•	Ein nicht authentifizierter Benutzer kann sich authentifizieren
+•	Ein nicht authentifizierter Benutzer kann ein Konto erstellen
+•	Ein authentifizierter Benutzer mit Administrationsrechte kann einen Benutzer zum Administrator befördern
+•	Mittels einem Database Seeder werden initiale Daten in die Datenbank geladen
+•	Ein authentifizierter Benutzer mit Administrationsrechte kann Produkte erstellen
+•	Ein authentifizierter und nicht authentifizierter Benutzer kann Produkte einsehen
+•	Ein authentifizierter Benutzer mit Administrationsrechte kann Produkte bearbeiten
+•	Ein authentifizierter Benutzer mit Administrationsrechte kann Produkte löschen
+•	Ein authentifizierter Benutzer und nicht authentifizierter Benutzer kann alle Produkte auflisten
+•	Ein authentifizierter Benutzer mit Administrationsrechte kann Produktkategorien erstellen
+•	Ein authentifizierter und nicht authentifizierter Benutzer kann Produktkategorien einsehen
+•	Ein authentifizierter Benutzer mit Administrationsrechte kann Produktkategorien bearbeiten
+•	Ein authentifizierter Benutzer mit Administrationsrechte kann Produktkategorien löschen
+•	Ein authentifizierter Benutzer und nicht authentifizierter Benutzer kann alle Produktkategorien auflisten
+•	Ein authentifizierter Benutzer und nicht authentifizierter Benutzer kann alle Produkte einer Produktekategorie auflisten
 
-### Nichtfunktional
+Nichtfunktional
 
+•	Die Applikation erfüllt die REST-Richtlinien (Insbesondere sind die Endpoints einheitlich und sinnvoll zu benennen)
+•	Die Datenbankanbindung erfolgt mittels Spring JDBC
+•	Die Authentifizierung für die geschützten Endpoints wird mittels JWT umgesetzt
+•	Es muss stets ein Benutzer mit Administratorenrechte im System geben
+•	Passwörter werden mit einem starken Verschlüsslungsalgorithmus geschützt
