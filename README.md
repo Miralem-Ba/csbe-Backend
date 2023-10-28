@@ -110,3 +110,7 @@ Nichtfunktional
 # Arbeitsjournal
 
 # Quellen
+- 21.10.23
+  https://blog.back4app.com/de/top-10-backend-sprachen-die-sie-kennen-sollten/
+- 
+
