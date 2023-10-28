@@ -89,3 +89,24 @@ Nichtfunktional
 
 # Authentifizierung
 
+# Dateistruktur
+
+# Tabellenstruktur
+
+# Code-Kommentare
+
+# Einhaltung-der-Code-Style-Richtlinien
+
+# OpenAPI-Dokumentation
+
+# HTTP-Response-Codes
+
+# API-Struktur
+
+# Endpoints
+
+# Namensschema-für-Daten
+
+# Arbeitsjournal
+
+# Quellen
