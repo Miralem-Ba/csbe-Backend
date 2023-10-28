@@ -16,14 +16,14 @@ BACKEND FÜR APPLIKATIONEN REALISIEREN
 - [Dateistruktur](#dateistruktur)
 - [Tabellenstruktur](#tabellenstruktur)
 - [Code-Kommentare](#code-kommentare)
-- [Einhaltung der Code-Style-Richtlinien](#
-- [OpenAPI-Dokumentation](#
-- [HTTP Response Codes](#
-- [API-Struktur](#
-- [Endpoints](#
-- [Namensschema für Daten](#
-- [Arbeitsjournal](#
-- [Quellen](#
+- [Einhaltung-der-Code-Style-Richtlinien](#einhaltung-der-Code-Style-Richtlinien)
+- [OpenAPI-Dokumentation](#openAPI-Dokumentation)
+- [HTTP-Response-Codes](#HTTP-Response-Codes)
+- [API-Struktur](#API-Struktur)
+- [Endpoints](#Endpoints)
+- [Namensschema-für-Daten](#Namensschema-für-Daten)
+- [Arbeitsjournal](#Arbeitsjournal)
+- [Quellen](#Quellen)
 
 ## Projektauftrag
 (Hier beschreiben Sie den Projektauftrag)
@@ -36,3 +36,5 @@ BACKEND FÜR APPLIKATIONEN REALISIEREN
 
 ## Technologien
 Beschreiben Sie die verwendeten Technologien wie Java Spring Boot, MariaDB, usw.
+
+
