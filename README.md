@@ -10,7 +10,7 @@ BACKEND FÜR APPLIKATIONEN REALISIEREN
 - [Nichtfunktional](#nichtfunktional)
 - [Dokumentation](#dokumentation)
 - [Benutzer](#benutzer)
-- [Datenbank_Seed](#datenbank Seed)
+- [Datenbank-Seed](#datenbank-Seed)
 - [Sicherheit](#sicherheit)
 - [Authentifizierung](#authentifizierung)
 - [Dateistruktur](#dateistruktur)
