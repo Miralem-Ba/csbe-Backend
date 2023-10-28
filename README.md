@@ -8,14 +8,14 @@ BACKEND FÜR APPLIKATIONEN REALISIEREN
 - [Anforderungen](#anforderungen)
 - [Funktional](#funktional)
 - [Nichtfunktional](#nichtfunktional)
-- [Dokumentation](#
-- [Benutzer](#
-- [Datenbank Seed](#
-- [Sicherheit](#
-- [Authentifizierung](#
-- [Dateistruktur](#
-- [Tabellenstruktur](#
-- [Code-Kommentare](#
+- [Dokumentation](#dokumentation)
+- [Benutzer](#benutzer)
+- [Datenbank Seed](#datenbank seed)
+- [Sicherheit](#sicherheit)
+- [Authentifizierung](#authentifizierung)
+- [Dateistruktur](#dateistruktur)
+- [Tabellenstruktur](#tabellenstruktur)
+- [Code-Kommentare](#code-kommentare)
 - [Einhaltung der Code-Style-Richtlinien](#
 - [OpenAPI-Dokumentation](#
 - [HTTP Response Codes](#
