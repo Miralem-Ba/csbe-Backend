@@ -133,8 +133,47 @@ Das Seeding-Tool verwendet vordefinierte Daten aus einer Quelle (z. B. JSON-Date
 - Daten fehlen oder sind unvollständig: Stellen Sie sicher, dass Ihre Seed-Daten korrekt formatiert sind und alle erforderlichen Informationen enthalten.
 
 # Sicherheit
+Die Sicherheit der Anwendung liegt mir besonders am Herzen. Hier möchte ich Sie über die von mir implementierten Sicherheitsmaßnahmen und -praktiken informieren und Ihnen einige Empfehlungen für eine sichere Nutzung geben.
+
+## Authentifizierung und Autorisierung
+Meine Benutzerdaten: Ich speichere Passwörter, die mit einem starken kryptografischen Algorithmus verschlüsselt sind.
+Sitzungsverwaltung: Ich habe dafür gesorgt, dass die Sitzungen sicher und zeitlich begrenzt sind. Sie werden automatisch abgemeldet, wenn Sie nicht mehr aktiv sind.
+Zugriffskontrolle: Ich habe Maßnahmen ergriffen, um sicherzustellen, dass nur autorisierte Benutzer auf bestimmte Ressourcen zugreifen können.
+
+## Datenübertragung
+Verschlüsselung: Alle Daten, die zwischen Ihrem Gerät und meinem Server übertragen werden, werden mit TLS/SSL verschlüsselt.
+Cookies: Ich setze HttpOnly- und Secure-Flags auf meinen Cookies, um Sicherheitsrisiken zu minimieren.
+
+## Code-Sicherheit
+SQL-Injection: Ich habe meine Datenbankanfragen so gestaltet, dass Risiken durch SQL-Injection minimiert werden.
+Cross-Site Scripting (XSS): Ich validiere und bereinige Benutzereingaben, um Risiken durch XSS zu minimieren.
+
+## Drittanbieter-Komponenten
+Ich halte alle meine Abhängigkeiten und Bibliotheken stets aktuell, um bekannten Sicherheitslücken vorzubeugen.
+Ich nutze nur vertrauenswürdige und geprüfte Libraries.
+
+## Meine Empfehlungen für euch
+Bitte stellt sicher, dass ihr stets die neueste Version meiner Anwendung nutzt.
+Nutzt starke Passwörter und ändert sie regelmäßig.
+Betreibt meine Anwendung in einer sicheren Umgebung.
 
 # Authentifizierung
+Als ich diese Anwendung entwickelte, wollte ich eine sichere und benutzerfreundliche Authentifizierung anbieten. Hier möchte ich erklären, wie ich den Authentifizierungsprozess gestaltet habe und wie Sie ihn am besten nutzen können.
+
+## Meine Methoden
+Passwortbasiert: Ich speichere Ihre Passwörter nicht im Klartext. Stattdessen verwende ich eine starke Einweg-Hash-Funktion, um sicherzustellen, dass Ihre Passwörter auch im Falle eines Datenlecks sicher sind.
+Sitzungsverarbeitung: Nach erfolgreicher Registrierung erstelle ich eine Sitzung für Sie. Diese Sitzung ist zeitlich begrenzt, so dass sie nach einer bestimmten Zeit der Inaktivität automatisch endet.
+
+## Zwei-Faktor-Authentifizierung
+Um eine zusätzliche Sicherheitsebene zu schaffen, habe ich die Zwei-Faktor-Authentifizierung (2FA) eingeführt. Ich empfehle Ihnen dringend, diese Funktion in Ihren Einstellungen zu aktivieren.
+
+## Tokens und API-Zugriff
+Wenn ihr über unsere API auf die Anwendung zugreifen möchtet, biete ich Token-basierte Authentifizierung an. Dieser Token gewährleistet, dass ihr sicher auf unsere Dienste zugreifen könnt, ohne euer Passwort erneut eingeben zu müssen.
+
+## Meine Empfehlungen
+Wählt ein starkes, einzigartiges Passwort für euren Account.
+Aktiviert, wenn möglich, die Zwei-Faktor-Authentifizierung, um euren Account zusätzlich zu schützen.
+Gebt euer Passwort nie weiter und achtet darauf, in welcher Umgebung ihr euch authentifiziert. Öffentliche Netzwerke können riskant sein.
 
 # Dateistruktur
 
