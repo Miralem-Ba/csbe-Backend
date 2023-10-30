@@ -176,6 +176,16 @@ Aktiviert, wenn möglich, die Zwei-Faktor-Authentifizierung, um euren Account zu
 Gebt euer Passwort nie weiter und achtet darauf, in welcher Umgebung ihr euch authentifiziert. Öffentliche Netzwerke können riskant sein.
 
 # Dateistruktur
+In meinem Projekt habe ich mich für eine klare und verständliche Dateistruktur entschieden, um den Überblick zu behalten und die Zusammenarbeit zu erleichtern.
+
+- /src: In diesem Ordner bewahre ich den Hauptcode meines Projekts auf. Hier habe ich alle wichtigen Module, Klassen und Funktionen untergebracht.
+- /src/main: Dieser Unterordner enthält den Hauptcode meiner Anwendung.
+- /src/test: Hier habe ich alle meine Testdateien abgelegt. Mit ihrer Hilfe kann ich sicherstellen, dass alles so funktioniert, wie ich es mir vorgestellt habe.
+- /docs: Hier bewahre ich alle Dokumentationsdateien und zugehörige Ressourcen auf. Dieser Ordner ist besonders hilfreich für jeden, der tiefer in mein Projekt eintauchen möchte.
+- .gitignore: Ich verwende diese Datei, um sicherzustellen, dass bestimmte Dateien oder Verzeichnisse nicht zu meinem GitHub-Repository hinzugefügt werden, beispielsweise temporäre Dateien oder vertrauliche Konfigurationsdateien.
+- README.md: In dieser Datei gebe ich einen Überblick über mein Projekt, erkläre die Einrichtung, die Anforderungen und gebe andere wichtige Informationen weiter, die für Entwickler oder Benutzer nützlich sein könnten.
+
+Dank dieser Struktur fällt es mir leicht, den Überblick zu behalten, und ich glaube, dass sie auch anderen Entwicklern helfen wird, sich in meinem Projekt zurechtzufinden.
 
 # Tabellenstruktur
 
