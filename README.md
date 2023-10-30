@@ -55,7 +55,7 @@ Es wird mit einem Java Spring Boot Server (Spring Boot 3.X / Spring Framework 6.
 Zum Einsehen der Schnittstellendokumentation wird die Web-App swagger-ui verwendet.
 
 ## Anforderungen
-## Funktonal
+## Funktional
 - Ein nicht authentifizierter Benutzer kann sich authentifizieren
 - Ein nicht authentifizierter Benutzer kann ein Konto erstellen
 - Ein authentifizierter Benutzer mit Administrationsrechte kann einen Benutzer zum Administrator befördern
@@ -80,34 +80,38 @@ Zum Einsehen der Schnittstellendokumentation wird die Web-App swagger-ui verwend
 - Passwörter werden mit einem starken Verschlüsslungsalgorithmus geschützt
 
 # Benutzer
-## Rollen
-In meinem System habe ich verschiedene Benutzerrollen implementiert, jede mit unterschiedlichen Berechtigungen:
+Die Benutzerkomponente ermöglicht die Verwaltung von Benutzern innerhalb des Systems. Jeder Benutzer hat verschiedene Attribute wie Name, Nachname, Benutzername, Passwort und mehr.
 
-Normaler Benutzer (Kunde).
+## Entität: Benutzer
+Jeder Benutzer im System wird durch die Entität Benutzer dargestellt. Hier sind die wichtigsten Attribute:
 
-Er kann Produkte ansehen.
-Er kann Produktkategorien anzeigen.
-Er kann sich authentifizieren und ein Konto erstellen.
-Verwalter
+- id: Ein eindeutiger Bezeichner für den Benutzer.
+- name: Der Vorname des Benutzers.
+- lastname: Der Nachname des Benutzers.
+- username: Ein eindeutiger Benutzername für die Anmeldung.
+- password: Das Passwort des Benutzers.
+- Beschreibung: Eine kurze Beschreibung des Benutzers.
+- Bild: Ein Bild oder Avatar des Benutzers.
+- aktiv: Der Aktivierungsstatus des Benutzers.
+- isAdmin: Ein boolescher Wert, der angibt, ob der Benutzer über Administratorrechte verfügt.
+- productId: Die dem Benutzer zugeordnete Produkt-ID (falls zutreffend).
 
-Er hat alle Rechte eines normalen Benutzers.
-Er kann Produkte erstellen, bearbeiten und löschen.
-Er kann Produktkategorien erstellen, bearbeiten und löschen.
-Er kann andere Benutzer zum Administrator befördern.
+## API-Endpunkte
+- GET /api/users: Gibt eine Liste aller Benutzer zurück.
+- GET /api/users/{id}: Gibt einen bestimmten Benutzer anhand seiner ID zurück.
+- POST /api/users: Legt einen neuen Benutzer an.
+- PUT /api/users/{id}: Aktualisiert einen vorhandenen Benutzer auf der Grundlage seiner ID.
+- DELETE /api/users/{id}: Löscht einen Benutzer auf der Grundlage seiner ID.
+- 
+## Dienst
+Die Hauptgeschäftslogik für Benutzer wird im UserService verwaltet. Dieser Dienst bietet Methoden zum Erstellen, Abrufen, Aktualisieren und Löschen von Benutzern.
 
-## Authentifizierung
-Für die Benutzerauthentifizierung in meinem System verwende ich JSON Web Tokens (JWT):
+## Repository
+Das UserRepository stellt die Datenzugriffsmethoden bereit und erweitert JpaRepository.
 
-Ich habe einen speziellen Endpunkt für die Authentifizierung eingerichtet (/auth/login). Dieser nimmt einen Benutzernamen und ein Passwort entgegen und gibt bei Erfolg ein gültiges JWT zurück.
+## Benutzer-DTO (UserDto)
+In bestimmten Fällen, in denen nicht alle Benutzerattribute benötigt werden, kann UserDto verwendet werden, um eine reduzierte Sicht auf einen Benutzer darzustellen.
 
-Dieses Token muss in die Kopfzeile jeder Anfrage an geschützte Endpunkte aufgenommen werden. Das Token ist für [XY Stunden/Tage] gültig. Danach muss sich der Benutzer erneut authentifizieren.
-
-Benutzerregistrierung
-Neue Benutzer können sich über den Endpunkt /auth/register in meinem System registrieren:
-
-Die erforderlichen Informationen sind: Benutzername, Passwort [und andere relevante Daten, z. B. E-Mail].
-
-Ich speichere Passwörter sicher, indem ich sie vor der Speicherung verschlüssele.
 # Datenbank-Seed
 
 # Sicherheit
