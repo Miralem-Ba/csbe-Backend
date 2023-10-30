@@ -55,8 +55,7 @@ Es wird mit einem Java Spring Boot Server (Spring Boot 3.X / Spring Framework 6.
 Zum Einsehen der Schnittstellendokumentation wird die Web-App swagger-ui verwendet.
 
 ## Anforderungen
-Funktonal
-
+## Funktonal
 - Ein nicht authentifizierter Benutzer kann sich authentifizieren
 - Ein nicht authentifizierter Benutzer kann ein Konto erstellen
 - Ein authentifizierter Benutzer mit Administrationsrechte kann einen Benutzer zum Administrator befördern
@@ -73,8 +72,7 @@ Funktonal
 - Ein authentifizierter Benutzer und nicht authentifizierter Benutzer kann alle Produktkategorien auflisten
 - Ein authentifizierter Benutzer und nicht authentifizierter Benutzer kann alle Produkte einer Produktekategorie auflisten
 
-Nichtfunktional
-
+## Nichtfunktional
 - Die Applikation erfüllt die REST-Richtlinien (Insbesondere sind die Endpoints einheitlich und sinnvoll zu benennen)
 - Die Datenbankanbindung erfolgt mittels Spring JDBC
 - Die Authentifizierung für die geschützten Endpoints wird mittels JWT umgesetzt
@@ -82,7 +80,34 @@ Nichtfunktional
 - Passwörter werden mit einem starken Verschlüsslungsalgorithmus geschützt
 
 # Benutzer
+## Rollen
+In meinem System habe ich verschiedene Benutzerrollen implementiert, jede mit unterschiedlichen Berechtigungen:
 
+Normaler Benutzer (Kunde).
+
+Er kann Produkte ansehen.
+Er kann Produktkategorien anzeigen.
+Er kann sich authentifizieren und ein Konto erstellen.
+Verwalter
+
+Er hat alle Rechte eines normalen Benutzers.
+Er kann Produkte erstellen, bearbeiten und löschen.
+Er kann Produktkategorien erstellen, bearbeiten und löschen.
+Er kann andere Benutzer zum Administrator befördern.
+
+## Authentifizierung
+Für die Benutzerauthentifizierung in meinem System verwende ich JSON Web Tokens (JWT):
+
+Ich habe einen speziellen Endpunkt für die Authentifizierung eingerichtet (/auth/login). Dieser nimmt einen Benutzernamen und ein Passwort entgegen und gibt bei Erfolg ein gültiges JWT zurück.
+
+Dieses Token muss in die Kopfzeile jeder Anfrage an geschützte Endpunkte aufgenommen werden. Das Token ist für [XY Stunden/Tage] gültig. Danach muss sich der Benutzer erneut authentifizieren.
+
+Benutzerregistrierung
+Neue Benutzer können sich über den Endpunkt /auth/register in meinem System registrieren:
+
+Die erforderlichen Informationen sind: Benutzername, Passwort [und andere relevante Daten, z. B. E-Mail].
+
+Ich speichere Passwörter sicher, indem ich sie vor der Speicherung verschlüssele.
 # Datenbank-Seed
 
 # Sicherheit
