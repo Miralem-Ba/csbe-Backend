@@ -113,6 +113,24 @@ Das UserRepository stellt die Datenzugriffsmethoden bereit und erweitert JpaRepo
 In bestimmten Fällen, in denen nicht alle Benutzerattribute benötigt werden, kann UserDto verwendet werden, um eine reduzierte Sicht auf einen Benutzer darzustellen.
 
 # Datenbank-Seed
+Die Datenbank-Seed-Funktion ermöglicht es Entwicklern, die Datenbank mit ersten Daten zu füllen. Dies ist besonders nützlich, um eine konsistente Entwicklungs- und Testumgebung zu gewährleisten.
+
+## Wie es funktioniert
+Das Seeding-Tool verwendet vordefinierte Daten aus einer Quelle (z. B. JSON-Dateien, SQL-Skripts oder Java-Klassen) und fügt diese Daten in die Datenbank ein.
+
+## Schritte zum Seeding der Datenbank
+- Vorbereitung: Stellen Sie sicher, dass Ihre Datenbank läuft und korrekt konfiguriert ist.
+- Datenquellen: Überprüfen Sie die Dateien im Verzeichnis path/to/seeds, um die Seed-Daten zu sehen. Passen Sie die Daten bei Bedarf an.
+- Ausführen des Seed-Skripts: Führen Sie das Skript seedDatabaseScript (oder ein entsprechend benanntes Skript) aus, um die Seed-Daten in die Datenbank zu laden.
+- Überprüfen Sie Ihre Datenbank, um sicherzustellen, dass die Daten korrekt eingefügt wurden.
+
+## Vorsicht
+- Das Seeding-Skript kann vorhandene Daten in der Datenbank überschreiben. Stellen Sie sicher, dass Sie eine Sicherungskopie Ihrer Datenbank haben, bevor Sie das Skript ausführen.
+- Verwenden Sie das Seeding-Skript nicht in einer Produktionsumgebung, wenn dies nicht ausdrücklich erforderlich ist und Sie die damit verbundenen Risiken kennen.
+
+## Häufige Probleme und deren Behebung
+- Fehlermeldung "Datenbankverbindung fehlgeschlagen": Überprüfen Sie Ihre Datenbankverbindung und Ihre Konfigurationsdateien.
+- Daten fehlen oder sind unvollständig: Stellen Sie sicher, dass Ihre Seed-Daten korrekt formatiert sind und alle erforderlichen Informationen enthalten.
 
 # Sicherheit
 
