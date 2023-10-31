@@ -318,6 +318,7 @@ Hier ist eine Übersicht über die Haupt-DTOs, die ich in diesem Projekt verwend
 |             | - Überprüfung der Datenbankrelationen und -indizes.                                 |              1h |
 | Oct 31, 2023| - Integrationstests für den UserService geschrieben.                                |              3h |
 |             | - Debugging von JWT-Authentifizierungsproblemen.                                    |             1.5h|
+|             | - Die Dokumentation auf GitHub vervollständigen und abschließen.                    |             1.5h|
 
 # Quellen
 - Unterricht vom Herrn Daniel Schmitz und Stefano Mavilio
