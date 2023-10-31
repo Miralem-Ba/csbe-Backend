@@ -10,22 +10,22 @@ BACKEND FÜR APPLIKATIONEN REALISIEREN 295
     - [Nichtfunktional](#nichtfunktional)
   - [Dokumentation](#dokumentation)
 - [Benutzer](#benutzer)
-  - [Entität: Benutzer]
-  - [API-Endpunkte]
-  - [Dienst]
-  - [Repository]
-  - [Benutzer-DTO (UserDto)]
+  - [Entität:Benutzer](#Entität:Benutzer)
+  - [API-Endpunkte](#API-Endpunkte)
+  - [Dienst](#Dienst)
+  - [Repository](#Repository)
+  - [Benutzer-DTO (UserDto)](#Benutzer-DTO (UserDto))
 - [Datenbank-Seed](#datenbank-Seed)
-  - [Wie es funktioniert]
-  - [Schritte zum Seeding der Datenbank]
-  - [Vorsicht]
-  - [Häufige Probleme und deren Behebung]
-- [Sicherheit](#sicherheit)
-  - [Authentifizierung und Autorisierung]
-    - [Datenübertragung]
-    - [Code-Sicherheit]
-    - [Drittanbieter-Komponenten]
-    - [ Meine Empfehlungen für euch]
+  - [Wie-es-funktioniert](#Wie-es-funktioniert)
+  - [Schritte-zum-Seeding-der-Datenbank](#Schritte-zum-Seeding-der-Datenbank)
+  - [Vorsicht](#Vorsicht)
+  - [Häufige Probleme und deren Behebung](#Häufige-Probleme-und-deren-Behebung)
+- [Sicherheit](#sicherheit)(#)
+  - [Authentifizierung und Autorisierung](#)
+    - [Datenübertragung](#)
+    - [Code-Sicherheit](#)
+    - [Drittanbieter-Komponenten](#)
+    - [ Meine Empfehlungen für euch](#)
 - [Authentifizierung](#authentifizierung)
 - [Dateistruktur](#dateistruktur)
 - [Tabellenstruktur](#tabellenstruktur)
