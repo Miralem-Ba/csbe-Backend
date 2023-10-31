@@ -218,12 +218,16 @@ Dank dieser Struktur fällt es mir leicht, den Überblick zu behalten, und ich g
 - aktualisiert_um: DateTime
 
 # Code-Kommentare
+Bei meiner Arbeit an diesem Projekt war es mir besonders wichtig, den Code für jeden verständlich zu halten. Als Beispiel kann die Klasse **ProductService** herangezogen werden, bei der ich jeden Schritt des CRUD-Prozesses ausführlich kommentiert habe. Das hilft nicht nur mir, sondern auch zukünftigen Entwicklern, den Prozess und die Logik dahinter sofort zu verstehen.
 
 # Einhaltung-der-Code-Style-Richtlinien
+Ich habe streng darauf geachtet, meinen Code konsistent und sauber zu halten. Insbesondere in der Klasse **UserController** habe ich darauf geachtet, dass alle Methoden, Variablen und anderen Codeelemente den festgelegten Richtlinien entsprechen. Dies erleichtert nicht nur die Wartung, sondern macht den Code auch für alle leichter verständlich.
 
 # OpenAPI-Dokumentation
+Die OpenAPI-Dokumentation war ein Schlüsselelement bei der Entwicklung der API für dieses Projekt. Ein Beispiel dafür ist die Dokumentation der **POST-Methode im CategoryController**, in der genau beschrieben wird, welche Parameter erforderlich sind und welche Art von Antwort der Client erwarten kann. Dies gibt Entwicklern, die die API nutzen wollen, eine klare Anleitung.
 
 # HTTP-Response-Codes
+Ein prägnantes Beispiel für die Verwendung korrekter HTTP-Response-Codes ist die Methode **getUserById in der Klasse User**. Wenn ein Benutzer erfolgreich abgerufen wird, gibt sie den Code **200 OK** zurück. Wenn jedoch kein Benutzer mit der angegebenen ID gefunden wird, wird der Code **404 Not Found** zurückgegeben. Damit erhält der Client eine klare Rückmeldung über den Ergebnisstatus seiner Anfrage.
 
 # API-Struktur
 Bei der Erstellung dieses Projekts habe ich besonders auf die Strukturierung und Benennung der API-Endpunkte geachtet. Hier ist ein kurzer Überblick über die Endpunkte und die erwarteten Parameter:
