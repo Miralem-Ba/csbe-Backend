@@ -1,15 +1,15 @@
 BACKEND FÜR APPLIKATIONEN REALISIEREN 295
 
 # Inhalt
-- [Projektauftrag](#projektauftrag)
-- [Datenmodell](#datenmodell)
-- [Dokumentation](#dokumentation)
-- [Technologien](#technologien)
-- [Anforderungen](#anforderungen)
-- [Funktional](#funktional)
-- [Nichtfunktional](#nichtfunktional)
-- [Dokumentation](#dokumentation)
-- [Benutzer](#benutzer)
+  - [Projektauftrag](#projektauftrag)
+  - [Datenmodell](#datenmodell)
+  - [Dokumentation](#dokumentation)
+  - [Technologien](#technologien)
+  - [Anforderungen](#anforderungen)
+    - [Funktional](#funktional)
+    - [Nichtfunktional](#nichtfunktional)
+  - [Dokumentation](#dokumentation)
+- [Benutzer](#benutzer) 
 - [Datenbank-Seed](#datenbank-Seed)
 - [Sicherheit](#sicherheit)
 - [Authentifizierung](#authentifizierung)
@@ -140,19 +140,19 @@ Meine Benutzerdaten: Ich speichere Passwörter, die mit einem starken kryptograf
 Sitzungsverwaltung: Ich habe dafür gesorgt, dass die Sitzungen sicher und zeitlich begrenzt sind. Sie werden automatisch abgemeldet, wenn Sie nicht mehr aktiv sind.
 Zugriffskontrolle: Ich habe Maßnahmen ergriffen, um sicherzustellen, dass nur autorisierte Benutzer auf bestimmte Ressourcen zugreifen können.
 
-## Datenübertragung
+### Datenübertragung
 Verschlüsselung: Alle Daten, die zwischen Ihrem Gerät und meinem Server übertragen werden, werden mit TLS/SSL verschlüsselt.
 Cookies: Ich setze HttpOnly- und Secure-Flags auf meinen Cookies, um Sicherheitsrisiken zu minimieren.
 
-## Code-Sicherheit
+### Code-Sicherheit
 SQL-Injection: Ich habe meine Datenbankanfragen so gestaltet, dass Risiken durch SQL-Injection minimiert werden.
 Cross-Site Scripting (XSS): Ich validiere und bereinige Benutzereingaben, um Risiken durch XSS zu minimieren.
 
-## Drittanbieter-Komponenten
+### Drittanbieter-Komponenten
 Ich halte alle meine Abhängigkeiten und Bibliotheken stets aktuell, um bekannten Sicherheitslücken vorzubeugen.
 Ich nutze nur vertrauenswürdige und geprüfte Libraries.
 
-## Meine Empfehlungen für euch
+### Meine Empfehlungen für euch
 Bitte stellt sicher, dass ihr stets die neueste Version meiner Anwendung nutzt.
 Nutzt starke Passwörter und ändert sie regelmäßig.
 Betreibt meine Anwendung in einer sicheren Umgebung.
