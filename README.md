@@ -9,9 +9,23 @@ BACKEND FÜR APPLIKATIONEN REALISIEREN 295
     - [Funktional](#funktional)
     - [Nichtfunktional](#nichtfunktional)
   - [Dokumentation](#dokumentation)
-- [Benutzer](#benutzer) 
+- [Benutzer](#benutzer)
+  - [Entität: Benutzer]
+  - [API-Endpunkte]
+  - [Dienst]
+  - [Repository]
+  - [Benutzer-DTO (UserDto)]
 - [Datenbank-Seed](#datenbank-Seed)
+  - [Wie es funktioniert]
+  - [Schritte zum Seeding der Datenbank]
+  - [Vorsicht]
+  - [Häufige Probleme und deren Behebung]
 - [Sicherheit](#sicherheit)
+  - [Authentifizierung und Autorisierung]
+    - [Datenübertragung]
+    - [Code-Sicherheit]
+    - [Drittanbieter-Komponenten]
+    - [ Meine Empfehlungen für euch]
 - [Authentifizierung](#authentifizierung)
 - [Dateistruktur](#dateistruktur)
 - [Tabellenstruktur](#tabellenstruktur)
