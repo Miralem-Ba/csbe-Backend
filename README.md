@@ -188,6 +188,34 @@ In meinem Projekt habe ich mich für eine klare und verständliche Dateistruktur
 Dank dieser Struktur fällt es mir leicht, den Überblick zu behalten, und ich glaube, dass sie auch anderen Entwicklern helfen wird, sich in meinem Projekt zurechtzufinden.
 
 # Tabellenstruktur
+## Tabelle: Produkt
+- id: int (Primärschlüssel, auto increment)
+- Name: Zeichenkette (Länge: 255)
+- Beschreibung: Text
+- Preis: Float
+- lager_menge: int
+- category_id: int (Fremdschlüssel zur Kategorie-Tabelle)
+- user_id: int (Fremdschlüssel zur Tabelle user)
+- created_at: DateTime (Standard: aktuelles Datum und Uhrzeit)
+- updated_at: DateTime
+
+## Tabelle: Benutzer
+- id: int (Primärschlüssel, auto increment)
+- Benutzername: String (Länge: 255)
+- Passwort: String (Länge: 255, gehasht)
+- E-Mail: String (Länge: 255)
+- Rolle: String (Länge: 50, z. B. "Admin", "Benutzer")
+- aktiv: Ganze Zahl (Standard: 1)
+- created_at: DateTime (Standardwert: aktuelles Datum und Uhrzeit)
+- last_login: DateTime
+  
+## Tabelle: Kategorie
+- id: int (Primärschlüssel, auto increment)
+- name: Zeichenkette (Länge: 255)
+- Beschreibung: Text
+- aktiv: Integer (Standardwert: 1)
+- erstellt_am: DateTime (Standardwert: aktuelles Datum und Uhrzeit)
+- aktualisiert_um: DateTime
 
 # Code-Kommentare
 
