@@ -198,11 +198,49 @@ Dank dieser Struktur fällt es mir leicht, den Überblick zu behalten, und ich g
 # HTTP-Response-Codes
 
 # API-Struktur
+Bei der Erstellung dieses Projekts habe ich besonders auf die Strukturierung und Benennung der API-Endpunkte geachtet. Hier ist ein kurzer Überblick über die Endpunkte und die erwarteten Parameter:
+
+## Auth Controller:
+- Endpunkt: /api/auth/registration: für diesen Endpunkt erwarte ich die notwendigen Anmeldedaten eines Benutzers, einschließlich Benutzername, Passwort und andere relevante Details, um einen neuen Benutzer zu registrieren.
+- Endpunkt: /api/auth/login: Über diesen Endpunkt können sich die Benutzer mit ihren Anmeldedaten, wie Benutzername und Passwort, anmelden.
+
+## Kategorie-Controller:
+- Endpunkt: /api/categories: Hier können Benutzer alle verfügbaren Kategorien abrufen oder eine neue Kategorie über eine POST-Anforderung erstellen, wobei ich entsprechende Kategoriedaten im Anforderungskörper erwarte.
+- Endpunkt: /api/categories/{categoryId}: Dieser Endpunkt ermöglicht das Abrufen, Aktualisieren oder Löschen einer bestimmten Kategorie auf der Grundlage der übergebenen categoryId.
+
+## Produkte Controller:
+- Endpunkt: /api/products: Hier können Benutzer eine Liste aller Produkte abrufen oder ein neues Produkt hinzufügen. Wenn ich ein Produkt hinzufüge, erwarte ich die Produktdetails im Request Body.
+- Endpunkt: /api/products/{productId}: Dieser Endpunkt ermöglicht es Benutzern, bestimmte Produkte anhand ihrer productId abzurufen, zu aktualisieren oder zu löschen.
+
+## Benutzer-Controller:
+- Endpunkt: /api/user: Dieser allgemeine Endpunkt ist für Benutzeraktionen gedacht. Er ermöglicht das Abrufen einer Liste aller Benutzer oder das Hinzufügen neuer Benutzer.
+- Endpunkt: /api/user/{id} und andere mit Benutzer-ID: Diese Endpunkte können verwendet werden, um spezifische Benutzeraktionen auf der Grundlage der Benutzer-ID durchzuführen. Ich kann sie verwenden, um Benutzerdaten je nach der angeforderten Aktion abzurufen, zu aktualisieren oder zu löschen.
+
+Mit dieser Struktur und Benennung der Endpunkte hoffe ich, dass die API-Interaktion sowohl für mich als auch für andere Entwickler, die mit diesem Projekt arbeiten oder es nutzen wollen, transparent und einfach ist.
 
 # Endpoints
 
 # Namensschema-für-Daten
 
+## Entitäten
+- Category
+- Product
+- User
+
+## DTO ( Data Transfer Object
+
+In meinem Projekt nutze ich das Konzept der Data Transfer Objects (DTOs), um Daten zwischen verschiedenen Teilen der Anwendung zu übertragen, insbesondere bei Interaktionen zwischen dem Frontend und dem Backend. Durch die Verwendung von DTOs kann ich sicherstellen, dass nur die benötigten Daten übertragen werden, und eventuelle unnötige oder sensible Daten verborgen bleiben.
+
+Hier ist eine Übersicht über die Haupt-DTOs, die ich in diesem Projekt verwendet habe:
+
+- RegistrationDto: Dieses DTO nutze ich, um die notwendigen Informationen von Nutzern zu sammeln, die sich für meine Anwendung registrieren möchten. Es enthält Felder wie Benutzername, Passwort und E-Mail.
+- LoginDto: Hiermit erfasse ich die Anmeldedaten eines Benutzers. Typischerweise sind dies Benutzername und Passwort.
+- CategoryDTO: Mit diesem DTO kann ich Kategorieninformationen übertragen, beispielsweise für Produkte oder Dienstleistungen in meiner Anwendung.
+- ProductDTO: Dieses DTO dient dazu, Produktinformationen zwischen verschiedenen Teilen der Anwendung zu übertragen. Es kann Details wie den Produktnamen, den Preis und die Beschreibung enthalten.
+- UserAuthDTO: Nachdem ein Benutzer sich angemeldet hat, verwende ich dieses DTO, um Authentifizierungsinformationen und Token zu übertragen. So kann der Benutzer sicher auf geschützte Bereiche der Anwendung zugreifen.
+- UserDto: Mit diesem DTO übertrage ich grundlegende Benutzerinformationen. Es enthält Felder wie Name, Vorname und Profilbild.
+- Durch die klare Trennung und Definition dieser DTOs kann ich sicherstellen, dass meine Anwendung effizient und sicher funktioniert, wobei der Datenverkehr optimiert und das Risiko von Datenlecks minimiert wird.
+   
 # Arbeitsjournal
 
 # Quellen
