@@ -61,8 +61,9 @@ Alle Endpoints (ausser dies wird anderweitig entkräftet) der API müssen mittel
 ## Datenmodell
 Die Datenstruktur besteht aus zwei Tabellen, die durch einen Fremdschlüssel miteinander verbunden sind. Es handelt sich um die Tabellen product und category. Durch den Fremdschlüssel category_id wird ein Produkt einer Kategorie zugewiesen. Ein Produkt kann auch keine Kategorie haben (sprich: das Produkt ist nicht gelistet).
 
-- Produkt: (Beschreibung)
-- Kategorie: (Beschreibung)
+- Produkt: Dies wird eine einfache Tabelle mit einer ID und einer Beschreibung sein.
+- Kategorie: Diese Tabelle hat eine ID, eine Beschreibung und einen Fremdschlüssel category_id, der auf die Kategorietabelle verweist.
+Der Fremdschlüssel category_id kann null sein, was bedeutet, dass ein Produkt nicht zugeordnet werden muss.
 
 Die Tabelle: „Users“ gilt es selbst zu definieren. Achten Sie dabei auf die hier implementierten Namenskonventionen. 
 
