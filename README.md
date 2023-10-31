@@ -219,6 +219,24 @@ Bei der Erstellung dieses Projekts habe ich besonders auf die Strukturierung und
 Mit dieser Struktur und Benennung der Endpunkte hoffe ich, dass die API-Interaktion sowohl für mich als auch für andere Entwickler, die mit diesem Projekt arbeiten oder es nutzen wollen, transparent und einfach ist.
 
 # Endpoints
+- /api/auth/registration	POST	Dieser Endpunkt wird verwendet, damit sich ein nicht registrierter Benutzer registrieren kann.
+- /api/auth/login	POST	Dieser Endpunkt wird verwendet, damit sich ein registrierter Benutzer anmelden kann.
+- /api/categories/{categoryId}	GET	Dieser Endpunkt wird verwendet, um eine bestimmte Kategorie anhand einer ID zu bekommen.
+- /api/categories	GET	Dieser Endpunkt wird verwendet, um alle Kategorien zu bekommen.
+- /api/categories	POST	Dieser Endpunkt wird verwendet, um eine neue Kategorie zu erstellen (nur Admin).
+- /api/categories/{categoryId}	PUT	Dieser Endpunkt wird verwendet, um eine bestimmte Kategorie anhand einer ID zu aktualisieren (nur Admin).
+- /api/categories/{categoryId}	DELETE	Dieser Endpunkt wird verwendet, um eine bestimmte Kategorie anhand einer ID zu löschen (nur Admin).
+- /api/product/{productId}	GET	Dieser Endpunkt wird verwendet, um ein bestimmtes Produkt anhand einer ID zu bekommen.
+- /api/product	GET	Dieser Endpunkt wird verwendet, um alle Produkte zu bekommen.
+- /api/products	POST	Dieser Endpunkt wird verwendet, um ein neues Produkt zu erstellen.
+- /api/product/{productId}	PUT	Dieser Endpunkt wird verwendet, um ein bestimmtes Produkt anhand einer ID zu aktualisieren (nur Admin).
+- /api/product/{productId}	DELETE	Dieser Endpunkt wird verwendet, um ein bestimmtes Produkt anhand einer ID zu löschen (nur Admin).
+- /api/user/{id}	GET	Dieser Endpunkt wird verwendet, um einen bestimmten Benutzer anhand einer ID zu bekommen.
+- /api/user	GET	Dieser Endpunkt wird verwendet, um alle Benutzer zu bekommen.
+- /api/user	POST	Dieser Endpunkt wird verwendet, um einen neuen Benutzer zu erstellen.
+- /api/user/promote/{userId}	POST	Dieser Endpunkt wird verwendet, um einen bestimmten Benutzer zum Admin zu befördern (nur Admin).
+- /api/user/{id}/admin	PUT	Dieser Endpunkt wird verwendet, um einen bestimmten Benutzer zum Admin zu aktualisieren (nur Admin).
+- /api/user/{id}	DELETE	Dieser Endpunkt wird verwendet, um einen bestimmten Benutzer zu löschen (nur Admin).
 
 # Namensschema-für-Daten
 
