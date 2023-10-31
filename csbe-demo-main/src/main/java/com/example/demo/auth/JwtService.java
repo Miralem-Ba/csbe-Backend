@@ -2,60 +2,58 @@ package com.example.demo.auth;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
 
+/**
+ * Service class responsible for JWT (JSON Web Token) operations.
+ * Provides methods for creating JWTs and retrieving usernames from them.
+ */
+
 @Service
 public class JwtService {
 
-    @Value("${jwt.secret}")
-    private String jwtSecret;
+    /**
+     * Secret key for signing the JWT.
+     */
 
-    @Value("${jwt.expiration}")
-    private long jwtExpirationMs;
+    private final String secret = "MySecret";
 
-    public static String getUsername(String jwt) {
-        String secret = null;
-        return Jwts
-                .parser()
-                .setSigningKey((String) null)
-                .parseClaimsJws(jwt)
-                .getBody()
-                .getSubject();
-    }
+    /**
+     * Creates a JWT for a given username.
+     * The token has an issuer, issue date, expiration date, and the user's name as the subject.
+     * The token is signed with the HS256 algorithm using a secret key.
+     *
+     * @param userName the username for which the JWT is created.
+     * @return the JWT string.
+     */
 
-    public String generateJwtToken(String username) {
+    public String createJwt(String userName) {
         return Jwts
                 .builder()
-                .setIssuer("CsBe")
-                .setSubject(username)
+                .setIssuer("CsBE")
                 .setIssuedAt(new Date(System.currentTimeMillis()))
-                .setExpiration(new Date((System.currentTimeMillis()) * 601 * 60 * 24 * 20))
-                .signWith(SignatureAlgorithm.HS512, jwtSecret)
+                .setExpiration(new Date(System.currentTimeMillis() * 60 * 60 * 24 * 20)) // TODO: 10/28/23 fix time
+                .setSubject(userName)
+                .signWith(SignatureAlgorithm.HS256, secret)
                 .compact();
     }
 
-    public String getUsernameFromJwtToken(String token) {
-        return Jwts.parser().setSigningKey(jwtSecret).parseClaimsJws(token).getBody().getSubject();
-    }
-
-    public boolean validateJwtToken(String authToken) {
-        try {
-            Jwts.parser().setSigningKey(jwtSecret).parseClaimsJws(authToken);
-            return true;
-        } catch (Exception e) {
-            // Log the error (e) in a real application
-        }
-        return false;
-    }
-
-    public String createJwt(Object userName) {
-        return null;
-    }
+    /**
+     * Retrieves the username from a given JWT.
+     * The token is parsed and verified using the secret signing key.
+     *
+     * @param jwt the JWT string from which the username is retrieved.
+     * @return the username.
+     */
 
     public String getUserName(String jwt) {
-        return jwt;
+        return Jwts
+                .parser()
+                .setSigningKey(secret)
+                .parseClaimsJws(jwt)
+                .getBody()
+                .getSubject();
     }
 }

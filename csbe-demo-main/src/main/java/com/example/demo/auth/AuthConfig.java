@@ -9,11 +9,25 @@ import org.springframework.security.config.annotation.web.configurers.AbstractHt
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+/**
+ * Configuration class for authentication and authorization.
+ * Defines rules for API endpoint access based on roles and authorities.
+ */
+
 @Configuration
 public class AuthConfig {
 
     @Autowired
     private JwtFilter jwtFilter;
+
+    /**
+     * Configures and returns the security filter chain.
+     * This method defines rules for API endpoint access.
+     *
+     * @param httpSecurity the HttpSecurity instance to be configured.
+     * @return a SecurityFilterChain configured with authorization and other security settings.
+     * @throws Exception if an error occurs during the configuration.
+     */
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {
@@ -30,5 +44,4 @@ public class AuthConfig {
                 .csrf(AbstractHttpConfigurer::disable)
                 .build();
     }
-
 }
