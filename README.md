@@ -47,7 +47,7 @@ BACKEND FÜR APPLIKATIONEN REALISIEREN 295
   - [Benutzer-Controller](#Benutzer-Controller)
 - [Endpoints](#Endpoints)
 - [Namensschema-für-Daten](#Namensschema-für-Daten)
-  - [Entitäten]
+  - [Entitäten](#Entitäten)
   - [DTO ( Data Transfer Object)](#DTO-Data-Transfer-Object)
 - [Arbeitsjournal](#Arbeitsjournal)
 - [Quellen](#Quellen)
