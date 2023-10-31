@@ -308,7 +308,7 @@ Hier ist eine Übersicht über die Haupt-DTOs, die ich in diesem Projekt verwend
 |             | - Aktualisierung der API-Dokumentation.                                             |                 |
 | Oct 21, 2023| - Optimierung der Datenbankabfragen.                                                |              2h |
 |             | - Validierung von Eingabedaten für den UserController.                              |              2h |
-|             | - Durch einen Fehler im pom.xml habe ich versehentlich alle meine Klassen gelöscht. |                 |
+|             | - Durch einen Fehler im pom.xml habe ich versehentlich alle meine Klassen gelöscht. |              5h |
 | Oct 24, 2023| - Unit-Tests für den CategoryService.                                               |              2h |
 |             | - Anwendung von Caching für häufig abgerufene Daten.                                |             1.5h|
 | Oct 25, 2023| - Fehlerbehandlung für den CategoryController.                                      |              1h |
