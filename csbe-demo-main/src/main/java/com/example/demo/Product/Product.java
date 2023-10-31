@@ -167,4 +167,17 @@ public class Product {
 
     public void Floor(String s) {
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", category=" + category +
+                ", price=" + price +
+                ", description='" + description + '\'' +
+                ", Floor=" + Floor +
+                ", imagePath='" + imagePath + '\'' +
+                '}';
+    }
 }

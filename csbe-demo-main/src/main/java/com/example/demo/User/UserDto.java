@@ -154,4 +154,16 @@ public class UserDto {
     public void setActive(byte active) {
         this.active = active;
     }
+
+    @Override
+    public String toString() {
+        return "UserDto{" +
+                "userId=" + userId +
+                ", Name='" + Name + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", description='" + description + '\'' +
+                ", image='" + image + '\'' +
+                ", active=" + active +
+                '}';
+    }
 }

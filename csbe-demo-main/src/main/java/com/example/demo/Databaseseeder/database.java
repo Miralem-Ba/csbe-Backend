@@ -44,41 +44,56 @@ public class database implements CommandLineRunner {
      */
 
     private void seedUsers() {
-        // Checking if there are fewer than 5 users
+        // Überprüfung, ob weniger als 5 Benutzer vorhanden sind
         if (userRepository.count() < 5) {
-            // Creating and saving admin user
+            // Erstellung und Speicherung des Admin-Benutzers
             User admin = new User();
             admin.setName("admin");
+            admin.setLastname("admin");
+            admin.setUsername("admin");
             admin.setPassword(bCryptPasswordEncoder.encode("admin123"));
             admin.setAdmin(true);
+            admin.setImage("/path/to/default/image/admin.jpg");  // Setzen Sie hier den Bildpfad für den Admin
             userRepository.save(admin);
 
-            // Creating and saving test user 1
+            // Erstellung und Speicherung von Testbenutzer 1
             User test1 = new User();
             test1.setName("test1");
+            test1.setLastname("test1");
+            test1.setUsername("test1");
             test1.setPassword(bCryptPasswordEncoder.encode("test047"));
             test1.setAdmin(false);
+            test1.setImage("/path/to/default/image/test1.jpg");  // Setzen Sie hier den Bildpfad für Testbenutzer 1
             userRepository.save(test1);
 
-            // Creating and saving test user 2
+            // Erstellung und Speicherung von Testbenutzer 2
             User test2 = new User();
             test2.setName("test2");
+            test2.setLastname("test2");
+            test2.setUsername("test2");
             test2.setPassword(bCryptPasswordEncoder.encode("test442"));
             test2.setAdmin(false);
+            test2.setImage("/path/to/default/image/test2.jpg");  // Setzen Sie hier den Bildpfad für Testbenutzer 2
             userRepository.save(test2);
 
-            // Creating and saving test user 3
+            // Erstellung und Speicherung von Testbenutzer 3
             User test3 = new User();
             test3.setName("test3");
+            test3.setLastname("test3");
+            test3.setUsername("test3");
             test3.setPassword(bCryptPasswordEncoder.encode("test787"));
             test3.setAdmin(false);
+            test3.setImage("/path/to/default/image/test3.jpg");  // Setzen Sie hier den Bildpfad für Testbenutzer 3
             userRepository.save(test3);
 
-            // Creating and saving test user 4
+            // Erstellung und Speicherung von Testbenutzer 4
             User test4 = new User();
             test4.setName("test4");
+            test4.setLastname("test4");
+            test4.setUsername("test4");
             test4.setPassword(bCryptPasswordEncoder.encode("test007"));
             test4.setAdmin(false);
+            test4.setImage("/path/to/default/image/test4.jpg");  // Setzen Sie hier den Bildpfad für Testbenutzer 4
             userRepository.save(test4);
         }
     }
@@ -132,6 +147,6 @@ public class database implements CommandLineRunner {
     }
     @Override
     public void run(String... args) throws Exception {
+        seedDatabase();
     }
 }
-

@@ -8,12 +8,12 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 /**
  * Configuration class for authentication and authorization.
  * Defines rules for API endpoint access based on roles and authorities.
  */
-
 @Configuration
 public class AuthConfig {
 
@@ -28,20 +28,22 @@ public class AuthConfig {
      * @return a SecurityFilterChain configured with authorization and other security settings.
      * @throws Exception if an error occurs during the configuration.
      */
-
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity httpSecurity) throws Exception {
         return httpSecurity
-                .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
+                .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)  // Add the JWT filter
                 .authorizeHttpRequests(authorizationManagerRequestMatcherRegistry -> {
-                    authorizationManagerRequestMatcherRegistry.requestMatchers("/auth/*").permitAll();
-                    authorizationManagerRequestMatcherRegistry.requestMatchers("/persons").hasAuthority("admin");
-                    authorizationManagerRequestMatcherRegistry.requestMatchers(HttpMethod.GET, "/persons/*").hasAnyAuthority("admin", "user");
-                    authorizationManagerRequestMatcherRegistry.requestMatchers(HttpMethod.DELETE, "/persons/*").hasAuthority("admin");
-                    authorizationManagerRequestMatcherRegistry.anyRequest().authenticated();
+                    // Define access permissions for various API paths
+                    authorizationManagerRequestMatcherRegistry
+                            .requestMatchers(new AntPathRequestMatcher("/auth/*")).permitAll()
+                            .requestMatchers(new AntPathRequestMatcher("api/user/**")).permitAll()
+                            .requestMatchers(new AntPathRequestMatcher("/persons")).hasAuthority("admin")
+                            .requestMatchers(new AntPathRequestMatcher("/persons/*", HttpMethod.GET.name())).hasAnyAuthority("admin", "user")
+                            .requestMatchers(new AntPathRequestMatcher("/persons/*", HttpMethod.DELETE.name())).hasAuthority("admin")
+                            .anyRequest().authenticated();  // All other requests require authentication
                 })
-                .httpBasic(AbstractHttpConfigurer::disable)
-                .csrf(AbstractHttpConfigurer::disable)
+                .httpBasic(AbstractHttpConfigurer::disable)  // Disable basic authentication
+                .csrf(AbstractHttpConfigurer::disable)  // Disable CSRF protection
                 .build();
     }
 }

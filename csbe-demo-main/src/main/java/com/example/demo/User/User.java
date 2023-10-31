@@ -1,6 +1,10 @@
 package com.example.demo.User;
 
 import jakarta.persistence.*;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 /**
  * Represents a user within the system.
@@ -20,7 +24,7 @@ public class User {
     @Column(nullable = false, columnDefinition = "varchar(255)")
     private String lastname;
 
-    @Column(nullable = false, columnDefinition = "varchar(255)")
+    @Column( columnDefinition = "varchar(255)")
     private String username;
 
     @Column(nullable = false, columnDefinition = "varchar(255)")
@@ -241,5 +245,27 @@ public class User {
 
     public void setProductId(int productId) {
         this.productId = productId;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", description='" + description + '\'' +
+                ", image='" + image + '\'' +
+                ", active=" + active +
+                ", isAdmin=" + isAdmin +
+                ", productId=" + productId +
+                '}';
+    }
+
+
+    @Repository
+    public interface UserRepository extends JpaRepository<User, Integer> {
+        List<User> findByIsAdminTrue();
     }
 }
