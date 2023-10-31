@@ -260,9 +260,42 @@ Hier ist eine Übersicht über die Haupt-DTOs, die ich in diesem Projekt verwend
 - Durch die klare Trennung und Definition dieser DTOs kann ich sicherstellen, dass meine Anwendung effizient und sicher funktioniert, wobei der Datenverkehr optimiert und das Risiko von Datenlecks minimiert wird.
    
 # Arbeitsjournal
+| Datum       | Arbeit                                                           | Zeit in Stunden |
+|-------------|------------------------------------------------------------------|----------------:|
+| Oct 3, 2023 | - Überarbeitung des Datenmodells.                                 |              2h |
+|             | - Aufbau einer neuen Dokumentationsstruktur.                      |              1h |
+| Oct 4, 2023 | - Einbindung von Redis für Session-Management.                    |              2h |
+| Oct 5, 2023 | - Erweiterung der Benutzerschnittstelle für mobile Geräte.        |              2h |
+|             | - Debugging von Cross-Origin-Problemen.                           |                 |
+| Oct 9, 2023 | - Implementierung von Filtern für Produktsuche.                   |              3h |
+| Oct 11, 2023| - Einführung von CI/CD-Pipelines.                                 |              2h |
+|             | - Überarbeitung des Build-Prozesses.                              |              1h |
+| Oct 12, 2023| - Überarbeitung des Fehlermanagements.                            |             1.5h|
+|             | - Testen von Ausnahme-Szenarien.                                  |                 |
+| Oct 15, 2023| - Performance-Optimierung der Anwendung.                          |             2.5h|
+|             | - Überarbeitung der Benutzerrollen und -berechtigungen.           |              2h |
+| Oct 17, 2023| - Integration von WebSockets für Echtzeitbenachrichtigungen.      |              2h |
+| Oct 18, 2023| - Einbindung von Drittanbieter-APIs.                              |              3h |
+| Oct 19, 2023| - Implementierung von Aspektorientiertem Programmieren.           |             1.5h|
+|             | - Aktualisierung der API-Dokumentation.                           |                 |
+| Oct 21, 2023| - Optimierung der Datenbankabfragen.                              |              2h |
+|             | - Validierung von Eingabedaten für den UserController.            |              2h |
+| Oct 24, 2023| - Unit-Tests für den CategoryService.                             |              2h |
+|             | - Anwendung von Caching für häufig abgerufene Daten.              |             1.5h|
+| Oct 25, 2023| - Fehlerbehandlung für den CategoryController.                    |              1h |
+|             | - Überarbeitung der Produktbilder-Upload-Funktion.                |              2h |
+| Oct 26, 2023| - Implementierung der Suche für Produkte.                         |              3h |
+| Oct 29, 2023| - Hinzufügen von Paginierung zu den Produktendpunkten.            |              2h |
+|             | - Überprüfung der Datenbankrelationen und -indizes.               |              1h |
+| Oct 31, 2023| - Integrationstests für den UserService geschrieben.              |              3h |
+|             | - Debugging von JWT-Authentifizierungsproblemen.                  |             1.5h|
+|-------------|-------------------------------------------------------------------|-----------------|
 
 # Quellen
-- 21.10.23
-  https://blog.back4app.com/de/top-10-backend-sprachen-die-sie-kennen-sollten/
-- 
+- Unterricht vom Herrn Daniel Schmitz und Stefano Mavilio
+- Daniel Schmitz und Stefano Mavilio
+- Schulkameraden
+- https://de.wikipedia.org/wiki/Frontend_und_Backend
+- https://bsh-ag.de/it-wissensdatenbank/backend/
+- https://de.ryte.com/wiki/Backend
 
