@@ -160,12 +160,12 @@ Das Seeding-Tool verwendet vordefinierte Daten aus einer Quelle (z. B. JSON-Date
 - Daten fehlen oder sind unvollständig: Stellen Sie sicher, dass Ihre Seed-Daten korrekt formatiert sind und alle erforderlichen Informationen enthalten.
 
 # Sicherheit
-Die Sicherheit der Anwendung liegt mir besonders am Herzen. Hier möchte ich Sie über die von mir implementierten Sicherheitsmaßnahmen und -praktiken informieren und Ihnen einige Empfehlungen für eine sichere Nutzung geben.
+Die Sicherheit der Anwendung liegt mir besonders am Herzen. Hier möchte ich Sie über die von mir implementierten Sicherheitsmassnahmen und -praktiken informieren und Ihnen einige Empfehlungen für eine sichere Nutzung geben.
 
 ## Authentifizierung und Autorisierung
 Meine Benutzerdaten: Ich speichere Passwörter, die mit einem starken kryptografischen Algorithmus verschlüsselt sind.
 Sitzungsverwaltung: Ich habe dafür gesorgt, dass die Sitzungen sicher und zeitlich begrenzt sind. Sie werden automatisch abgemeldet, wenn Sie nicht mehr aktiv sind.
-Zugriffskontrolle: Ich habe Maßnahmen ergriffen, um sicherzustellen, dass nur autorisierte Benutzer auf bestimmte Ressourcen zugreifen können.
+Zugriffskontrolle: Ich habe Massnahmen ergriffen, um sicherzustellen, dass nur autorisierte Benutzer auf bestimmte Ressourcen zugreifen können.
 
 ### Datenübertragung
 Verschlüsselung: Alle Daten, die zwischen Ihrem Gerät und meinem Server übertragen werden, werden mit TLS/SSL verschlüsselt.
@@ -181,7 +181,7 @@ Ich nutze nur vertrauenswürdige und geprüfte Libraries.
 
 ### Meine Empfehlungen für euch
 Bitte stellt sicher, dass ihr stets die neueste Version meiner Anwendung nutzt.
-Nutzt starke Passwörter und ändert sie regelmäßig.
+Nutzt starke Passwörter und ändert sie regelmässig.
 Betreibt meine Anwendung in einer sicheren Umgebung.
 
 # Authentifizierung
@@ -260,7 +260,7 @@ Ein prägnantes Beispiel für die Verwendung korrekter HTTP-Response-Codes ist d
 Bei der Erstellung dieses Projekts habe ich besonders auf die Strukturierung und Benennung der API-Endpunkte geachtet. Hier ist ein kurzer Überblick über die Endpunkte und die erwarteten Parameter:
 
 ## Auth Controller:
-- Endpunkt: /api/auth/registration: für diesen Endpunkt erwarte ich die notwendigen Anmeldedaten eines Benutzers, einschließlich Benutzername, Passwort und andere relevante Details, um einen neuen Benutzer zu registrieren.
+- Endpunkt: /api/auth/registration: für diesen Endpunkt erwarte ich die notwendigen Anmeldedaten eines Benutzers, einschliesslich Benutzername, Passwort und andere relevante Details, um einen neuen Benutzer zu registrieren.
 - Endpunkt: /api/auth/login: Über diesen Endpunkt können sich die Benutzer mit ihren Anmeldedaten, wie Benutzername und Passwort, anmelden.
 
 ## Kategorie-Controller:
@@ -349,7 +349,7 @@ Hier ist eine Übersicht über die Haupt-DTOs, die ich in diesem Projekt verwend
 |             | - Überprüfung der Datenbankrelationen und -indizes.                                 |              1h |
 | Oct 31, 2023| - Integrationstests für den UserService geschrieben.                                |              3h |
 |             | - Debugging von JWT-Authentifizierungsproblemen.                                    |             1.5h|
-|             | - Die Dokumentation auf GitHub vervollständigen und abschließen.                    |             1.5h|
+|             | - Die Dokumentation auf GitHub vervollständigen und abschliessen.                    |             1.5h|
 
 # Quellen
 - Unterricht vom Herrn Daniel Schmitz und Stefano Mavilio
@@ -358,4 +358,4 @@ Hier ist eine Übersicht über die Haupt-DTOs, die ich in diesem Projekt verwend
 - https://de.wikipedia.org/wiki/Frontend_und_Backend
 - https://bsh-ag.de/it-wissensdatenbank/backend/
 - https://de.ryte.com/wiki/Backend
-- 
+-
