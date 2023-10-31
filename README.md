@@ -55,7 +55,7 @@ Es wird mit einem Java Spring Boot Server (Spring Boot 3.X / Spring Framework 6.
 Zum Einsehen der Schnittstellendokumentation wird die Web-App swagger-ui verwendet.
 
 ## Anforderungen
-## Funktional
+### Funktional
 - Ein nicht authentifizierter Benutzer kann sich authentifizieren
 - Ein nicht authentifizierter Benutzer kann ein Konto erstellen
 - Ein authentifizierter Benutzer mit Administrationsrechte kann einen Benutzer zum Administrator befördern
@@ -72,7 +72,7 @@ Zum Einsehen der Schnittstellendokumentation wird die Web-App swagger-ui verwend
 - Ein authentifizierter Benutzer und nicht authentifizierter Benutzer kann alle Produktkategorien auflisten
 - Ein authentifizierter Benutzer und nicht authentifizierter Benutzer kann alle Produkte einer Produktekategorie auflisten
 
-## Nichtfunktional
+### Nichtfunktional
 - Die Applikation erfüllt die REST-Richtlinien (Insbesondere sind die Endpoints einheitlich und sinnvoll zu benennen)
 - Die Datenbankanbindung erfolgt mittels Spring JDBC
 - Die Authentifizierung für die geschützten Endpoints wird mittels JWT umgesetzt
@@ -325,4 +325,4 @@ Hier ist eine Übersicht über die Haupt-DTOs, die ich in diesem Projekt verwend
 - https://de.wikipedia.org/wiki/Frontend_und_Backend
 - https://bsh-ag.de/it-wissensdatenbank/backend/
 - https://de.ryte.com/wiki/Backend
-
+- 
