@@ -304,7 +304,7 @@ Mit dieser Struktur und Benennung der Endpunkte hoffe ich, dass die API-Interakt
 - Product
 - User
 
-## DTO ( Data Transfer Object
+## DTO ( Data Transfer Object )
 
 In meinem Projekt nutze ich das Konzept der Data Transfer Objects (DTOs), um Daten zwischen verschiedenen Teilen der Anwendung zu übertragen, insbesondere bei Interaktionen zwischen dem Frontend und dem Backend. Durch die Verwendung von DTOs kann ich sicherstellen, dass nur die benötigten Daten übertragen werden, und eventuelle unnötige oder sensible Daten verborgen bleiben.
 
