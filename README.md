@@ -358,4 +358,8 @@ Hier ist eine Übersicht über die Haupt-DTOs, die ich in diesem Projekt verwend
 - https://de.wikipedia.org/wiki/Frontend_und_Backend
 - https://bsh-ag.de/it-wissensdatenbank/backend/
 - https://de.ryte.com/wiki/Backend
--
+- https://de.ryte.com/wiki/Backend
+- https://www.seo-kueche.de/lexikon/backend/
+- https://www.google.com/search?q=backend&sca_esv=578190303&rlz=1C1CHBD_deCH1041CH1041&tbm=vid&sxsrf=AM9HkKlhVL3ftiffhqTNBLpKCQ-LOav6bA:1698770123834&source=lnms&sa=X&ved=2ahUKEwjnzKTu26CCAxX1hP0HHWX-B-UQ_AUoA3oECAIQBQ&biw=2560&bih=929&dpr=1#fpstate=ive&vld=cid:42fad52e,vid:efpDDd8wNRk,st:0
+- https://www.youtube.com/watch?v=XBu54nfzxAQ
+- https://www.google.com/search?q=backend+intrelij&sca_esv=578190303&rlz=1C1CHBD_deCH1041CH1041&biw=2560&bih=929&tbm=vid&sxsrf=AM9HkKnW4i3k83Zopu5GtcHqTX_pPqH8Aw%3A1698770188602&ei=DC1BZdmrJKK39u8P5LSH4Ao&ved=0ahUKEwjZ4ZWN3KCCAxWim_0HHWTaAawQ4dUDCA4&uact=5&oq=backend+intrelij&gs_lp=Eg1nd3Mtd2l6LXZpZGVvIhBiYWNrZW5kIGludHJlbGlqMgoQABgFGB4YDRgKMggQABgIGB4YDTIIEAAYCBgeGA0yCBAAGAgYHhgNMggQABgIGB4YDTIIEAAYCBgeGA0yCBAAGAgYHhgNSJYtUJoEWK4jcAJ4AJABAJgBiQGgAdIHqgEDNS41uAEDyAEA-AEBwgIEECMYJ8ICBRAAGIAEwgIHEAAYigUYQ8ICCBAAGMsBGIAEwgIGEAAYFhgewgIFECEYoAGIBgE&sclient=gws-wiz-video#fpstate=ive&vld=cid:d91b1af1,vid:v8SwUUWSWG8,st:0
