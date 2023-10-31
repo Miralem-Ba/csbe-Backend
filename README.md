@@ -41,9 +41,14 @@ BACKEND FÜR APPLIKATIONEN REALISIEREN 295
 - [OpenAPI-Dokumentation](#openAPI-Dokumentation)
 - [HTTP-Response-Codes](#HTTP-Response-Codes)
 - [API-Struktur](#API-Struktur)
-- (#)
+  - [Auth Controller](#Auth-Controller)
+  - [Kategorie-Controller](#Kategorie-Controller)
+  - [Produkte Controller](#Produkte-Controller)
+  - [Benutzer-Controller](#Benutzer-Controller)
 - [Endpoints](#Endpoints)
 - [Namensschema-für-Daten](#Namensschema-für-Daten)
+  - [Entitäten]
+  - [DTO ( Data Transfer Object)](#DTO-Data-Transfer-Object)
 - [Arbeitsjournal](#Arbeitsjournal)
 - [Quellen](#Quellen)
 
