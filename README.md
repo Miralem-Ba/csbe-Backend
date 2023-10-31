@@ -102,7 +102,7 @@ Jeder Benutzer im System wird durch die Entität Benutzer dargestellt. Hier sind
 - POST /api/users: Legt einen neuen Benutzer an.
 - PUT /api/users/{id}: Aktualisiert einen vorhandenen Benutzer auf der Grundlage seiner ID.
 - DELETE /api/users/{id}: Löscht einen Benutzer auf der Grundlage seiner ID.
-- 
+  
 ## Dienst
 Die Hauptgeschäftslogik für Benutzer wird im UserService verwaltet. Dieser Dienst bietet Methoden zum Erstellen, Abrufen, Aktualisieren und Löschen von Benutzern.
 
