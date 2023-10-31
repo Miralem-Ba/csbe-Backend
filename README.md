@@ -10,7 +10,7 @@ BACKEND FÜR APPLIKATIONEN REALISIEREN 295
     - [Nichtfunktional](#nichtfunktional)
   - [Dokumentation](#dokumentation)
 - [Benutzer](#benutzer)
-  - [Entität:-Benutzer](#Entität:-Benutzer)
+  - [Entität:Benutzer](#Entität-Benutzer)
   - [API-Endpunkte](#API-Endpunkte)
   - [Dienst](#Dienst)
   - [Repository](#Repository)
